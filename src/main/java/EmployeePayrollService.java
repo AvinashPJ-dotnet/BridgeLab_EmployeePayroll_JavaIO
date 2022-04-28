@@ -3,6 +3,21 @@ import java.util.*;
 public class EmployeePayrollService {
     List<EmployeePayrollData> employeePayrollList;
 
+    public long countEntries(IOService ioService) {
+        if(ioService.equals(IOService.FILE_IO)){
+            return new EmployeePayrollFileIOService().countEntries();
+        }
+        return 0;
+    }
+
+    public void printData(IOService ioService) {
+        if(ioService.equals(IOService.FILE_IO)){
+            new EmployeePayrollFileIOService().printData();
+        }
+    }
+
+    enum IOService{CONSOLE_IO,FILE_IO};
+
     public EmployeePayrollService(List<EmployeePayrollData> employeePayrollList) {
         this.employeePayrollList = employeePayrollList;
     }
@@ -24,9 +39,15 @@ public class EmployeePayrollService {
         double salary = in.nextInt();
         employeePayrollList.add(new EmployeePayrollData(id,name,salary));
     }
-
-    private void writeEmployeePayrollData(){
+    public void writeEmployeePayrollData() {
         System.out.println("Employee Payroll data: \n");
         employeePayrollList.forEach(System.out::println);
+    }
+
+    public void writeEmployeePayrollData(IOService ioService){
+        if(ioService.equals(IOService.CONSOLE_IO))
+            System.out.println("Writing"+employeePayrollList);
+        else if(ioService.equals(IOService.FILE_IO))
+            new EmployeePayrollFileIOService().write(employeePayrollList);
     }
 }

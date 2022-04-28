@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-28T08:06:54" hostname="AVINASHPJ-PC" time="0.072">
+  <properties/>
+  <testcase name="given3EmployeeData_WhenWrittenToFile_ShouldMatchEmployeeEntries()" classname="EmployeePayrollServiceTest" time="0.072"/>
+  <system-out><![CDATA[EmployeePayrollData{id=1, name='aka', salary=123.2}
+EmployeePayrollData{id=2, name='aavi', salary=3123.2}
+EmployeePayrollData{id=3, name='bhi', salary=6123.2}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
