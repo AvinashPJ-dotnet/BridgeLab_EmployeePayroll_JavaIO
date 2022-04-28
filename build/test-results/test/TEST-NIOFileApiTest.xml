@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NIOFileApiTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-26T17:02:55" hostname="AVINASHPJ-PC" time="0.091">
+  <properties/>
+  <testcase name="givenPath_WhenCheck_thenConfirm()" classname="NIOFileApiTest" time="0.091"/>
+  <system-out><![CDATA[D:\bridgelab\java_io_operations\FileTest\testDirectory\temp1
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp2
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp3
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp4
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp5
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp6
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp7
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp8
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp9
+----------------
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp1
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp2
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp3
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp4
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp5
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp6
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp7
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp8
+D:\bridgelab\java_io_operations\FileTest\testDirectory\temp9
+----------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
