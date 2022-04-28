@@ -42,4 +42,12 @@ public class NIOFileApiTest {
         System.out.println("----------------");
         Files.newDirectoryStream(newFilePath,path-> path.toFile().isFile() && path.startsWith("temp")).forEach(System.out::println);
     }
+
+    @Test
+    public void givenADirectoryWhenWatchListAllTheActivities() throws IOException {
+        Path newFilePath = Paths.get("D:\\bridgelab\\java_io_operations\\FileTest"+"\\"+"testDirectory");
+        Files.list(newFilePath).filter(Files::isRegularFile).forEach(System.out::println);
+        new JavaWatchServiceExample(newFilePath).processEvent();
+    }
+
 }
